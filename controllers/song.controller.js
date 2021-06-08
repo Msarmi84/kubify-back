@@ -19,7 +19,7 @@ class SongController {
 
     getSongsByUserId = (req, res) => {
 
-        const user_id = req.params.user_id;
+        const id = req.params.id;
         const sql = `SELECT * FROM song WHERE id = ${id}`;
 
         connection.query(sql, (error, results) => {
